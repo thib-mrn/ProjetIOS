@@ -98,7 +98,7 @@ class GestionViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let configuration = UISwipeActionsConfiguration(actions: [UIContextualAction(style: .destructive, title: "Je l'ai bu!", handler: {(action, view, completionHandler) in
+        let configuration = UISwipeActionsConfiguration(actions: [UIContextualAction(style: .destructive, title: "Je l'ai bue !", handler: {(action, view, completionHandler) in
             let row = indexPath.row
             self.data.remove(at: row)
             completionHandler(true)

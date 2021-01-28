@@ -26,13 +26,15 @@ class Result: Codable {
     let couleur: String
     let année: String
     let pays, region: String
+    let place: Int
 
-    init(name: String, couleur: String, année: String, pays: String, region: String) {
+    init(name: String, couleur: String, année: String, pays: String, region: String, place: Int) {
         self.name = name
         self.couleur = couleur
         self.année = année
         self.pays = pays
         self.region = region
+        self.place = place
     }
     
 

@@ -10,6 +10,8 @@
 		530AE24D25C07E6D00E03FD2 /* BouteillesAjout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE24C25C07E6D00E03FD2 /* BouteillesAjout.swift */; };
 		5325702C25AC85390043F88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5325702B25AC85390043F88F /* LaunchScreen.storyboard */; };
 		53AB7FCE25C30441003BBEFA /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AB7FCD25C30441003BBEFA /* InfosViewController.swift */; };
+		53B5393825C316DB008A7996 /* AffichageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5393725C316DB008A7996 /* AffichageViewController.swift */; };
+		53B5393B25C31749008A7996 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5393A25C31749008A7996 /* MyCollectionViewCell.swift */; };
 		53C1178625B1D79A0018B9E2 /* bouteilles.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C1178525B1D79A0018B9E2 /* bouteilles.json */; };
 		53C1178A25B1D7C80018B9E2 /* Bouteilles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1178925B1D7C80018B9E2 /* Bouteilles.swift */; };
 		53C1178D25B1E5CA0018B9E2 /* GestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */; };
@@ -26,6 +28,8 @@
 		530AE24C25C07E6D00E03FD2 /* BouteillesAjout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouteillesAjout.swift; sourceTree = "<group>"; };
 		5325702B25AC85390043F88F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53AB7FCD25C30441003BBEFA /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
+		53B5393725C316DB008A7996 /* AffichageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AffichageViewController.swift; sourceTree = "<group>"; };
+		53B5393A25C31749008A7996 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		53C1178525B1D79A0018B9E2 /* bouteilles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bouteilles.json; sourceTree = "<group>"; };
 		53C1178925B1D7C80018B9E2 /* Bouteilles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouteilles.swift; sourceTree = "<group>"; };
 		53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				53D1E2FE25A88C020011F321 /* ViewController.swift */,
 				53C1178F25B1E6F60018B9E2 /* BouteillesTableViewCell.swift */,
 				53AB7FCD25C30441003BBEFA /* InfosViewController.swift */,
+				53B5393725C316DB008A7996 /* AffichageViewController.swift */,
+				53B5393A25C31749008A7996 /* MyCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,11 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B5393B25C31749008A7996 /* MyCollectionViewCell.swift in Sources */,
 				53D1E2FF25A88C020011F321 /* ViewController.swift in Sources */,
 				53C1178A25B1D7C80018B9E2 /* Bouteilles.swift in Sources */,
 				53D1E30525A88C020011F321 /* ProjetIOS.xcdatamodeld in Sources */,
 				53D1E2FB25A88C020011F321 /* AppDelegate.swift in Sources */,
 				53C1179025B1E6F60018B9E2 /* BouteillesTableViewCell.swift in Sources */,
+				53B5393825C316DB008A7996 /* AffichageViewController.swift in Sources */,
 				53C1178D25B1E5CA0018B9E2 /* GestionViewController.swift in Sources */,
 				53D1E2FD25A88C020011F321 /* SceneDelegate.swift in Sources */,
 				530AE24D25C07E6D00E03FD2 /* BouteillesAjout.swift in Sources */,

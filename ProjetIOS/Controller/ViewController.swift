@@ -12,8 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet var gestion: [UIButton]!
     @IBOutlet weak var titre: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
 

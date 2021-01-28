@@ -22,19 +22,18 @@ class Bouteilles: Codable {
 
 // MARK: - Result
 class Result: Codable {
-    let id: Int
     let name: String
     let couleur: String
-    let degré, année: String
+    let année: String
     let pays, region: String
 
-    init(id: Int, name: String, couleur: String, degré: String, année: String, pays: String, region: String) {
-        self.id = id
+    init(name: String, couleur: String, année: String, pays: String, region: String) {
         self.name = name
         self.couleur = couleur
-        self.degré = degré
         self.année = année
         self.pays = pays
         self.region = region
     }
+    
+
 }

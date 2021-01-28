@@ -10,6 +10,7 @@ import UIKit
 class GestionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return data.count
     }
     
@@ -21,20 +22,32 @@ class GestionViewController: UIViewController, UITableViewDataSource, UITableVie
         
         cell.nomBouteille.text = data[row].name
         cell.anneeBouteille.text = data[row].année
-       if data[row].couleur == "Blanc" {
+        
+        if data[row].couleur == "Blanc" {
             
-            cell.couleur.image = UIImage(named: "grapes")
+        cell.backgroundColor = UIColor(red: 255/255, green: 250/255, blue: 100/255, alpha: 0.5)
+            cell.couleur.image = UIImage(named: "BLANC")
         }
         else if data[row].couleur == "Rouge" {
-            cell.couleur.image = UIImage(named: "grapes")
+            cell.couleur.image = UIImage(named: "RED")
+            cell.backgroundColor = UIColor(red: 231/255, green: 76/255, blue: 60/255, alpha: 0.5)
         }
-        else {
-            cell.couleur.image = UIImage(named: "grapes")
+        else if data[row].couleur == "Rosé" {
+            cell.couleur.image = UIImage(named: "ROSE")
+            cell.backgroundColor = UIColor(red: 255/255, green: 80/255, blue: 226/255, alpha: 0.5)
+        }
+        else{
+            cell.backgroundColor = UIColor(red: 39/255, green: 174/255, blue: 96/255, alpha: 0.5)
+            cell.couleur.image = UIImage(named: "CHAMP")
         }
         
         return cell
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        BouteillesTableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +82,13 @@ class GestionViewController: UIViewController, UITableViewDataSource, UITableVie
         
         BouteillesTableView.dataSource = self
         BouteillesTableView.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewCont = segue.destination as? InfosViewController {
+            let row = BouteillesTableView.indexPathForSelectedRow!.row
+            viewCont.data = data[row]
+        }
     }
     
     @IBOutlet weak var BouteillesTableView: UITableView!

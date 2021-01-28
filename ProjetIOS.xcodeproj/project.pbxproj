@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530AE24D25C07E6D00E03FD2 /* BouteillesAjout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530AE24C25C07E6D00E03FD2 /* BouteillesAjout.swift */; };
 		5325702C25AC85390043F88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5325702B25AC85390043F88F /* LaunchScreen.storyboard */; };
+		53AB7FCE25C30441003BBEFA /* InfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AB7FCD25C30441003BBEFA /* InfosViewController.swift */; };
 		53C1178625B1D79A0018B9E2 /* bouteilles.json in Resources */ = {isa = PBXBuildFile; fileRef = 53C1178525B1D79A0018B9E2 /* bouteilles.json */; };
 		53C1178A25B1D7C80018B9E2 /* Bouteilles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1178925B1D7C80018B9E2 /* Bouteilles.swift */; };
 		53C1178D25B1E5CA0018B9E2 /* GestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */; };
 		53C1179025B1E6F60018B9E2 /* BouteillesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1178F25B1E6F60018B9E2 /* BouteillesTableViewCell.swift */; };
-		53C1179B25B1FDEF0018B9E2 /* AjoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1179A25B1FDEF0018B9E2 /* AjoutViewController.swift */; };
 		53D1E2FB25A88C020011F321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1E2FA25A88C020011F321 /* AppDelegate.swift */; };
 		53D1E2FD25A88C020011F321 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1E2FC25A88C020011F321 /* SceneDelegate.swift */; };
 		53D1E2FF25A88C020011F321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D1E2FE25A88C020011F321 /* ViewController.swift */; };
@@ -22,12 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530AE24C25C07E6D00E03FD2 /* BouteillesAjout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouteillesAjout.swift; sourceTree = "<group>"; };
 		5325702B25AC85390043F88F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53AB7FCD25C30441003BBEFA /* InfosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosViewController.swift; sourceTree = "<group>"; };
 		53C1178525B1D79A0018B9E2 /* bouteilles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bouteilles.json; sourceTree = "<group>"; };
 		53C1178925B1D7C80018B9E2 /* Bouteilles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouteilles.swift; sourceTree = "<group>"; };
 		53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestionViewController.swift; sourceTree = "<group>"; };
 		53C1178F25B1E6F60018B9E2 /* BouteillesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouteillesTableViewCell.swift; sourceTree = "<group>"; };
-		53C1179A25B1FDEF0018B9E2 /* AjoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutViewController.swift; sourceTree = "<group>"; };
 		53D1E2F725A88C020011F321 /* ProjetIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D1E2FA25A88C020011F321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D1E2FC25A88C020011F321 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		530AE24225C07A4400E03FD2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53D1E30025A88C020011F321 /* Main.storyboard */,
+				5325702B25AC85390043F88F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		530AE24425C07A6000E03FD2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */,
+				53D1E2FE25A88C020011F321 /* ViewController.swift */,
+				53C1178F25B1E6F60018B9E2 /* BouteillesTableViewCell.swift */,
+				53AB7FCD25C30441003BBEFA /* InfosViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		530AE24625C07B4500E03FD2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				53D1E2FA25A88C020011F321 /* AppDelegate.swift */,
+				53D1E2FC25A88C020011F321 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		53C1178425B1D7200018B9E2 /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +91,7 @@
 		53C1178825B1D7A90018B9E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				530AE24C25C07E6D00E03FD2 /* BouteillesAjout.swift */,
 				53C1178925B1D7C80018B9E2 /* Bouteilles.swift */,
 			);
 			path = Models;
@@ -84,16 +116,11 @@
 		53D1E2F925A88C020011F321 /* ProjetIOS */ = {
 			isa = PBXGroup;
 			children = (
-				53C1178825B1D7A90018B9E2 /* Models */,
+				530AE24625C07B4500E03FD2 /* Delegate */,
 				53C1178425B1D7200018B9E2 /* data */,
-				53D1E2FA25A88C020011F321 /* AppDelegate.swift */,
-				53D1E2FC25A88C020011F321 /* SceneDelegate.swift */,
-				53D1E2FE25A88C020011F321 /* ViewController.swift */,
-				53C1178C25B1E5CA0018B9E2 /* GestionViewController.swift */,
-				53C1178F25B1E6F60018B9E2 /* BouteillesTableViewCell.swift */,
-				53C1179A25B1FDEF0018B9E2 /* AjoutViewController.swift */,
-				53D1E30025A88C020011F321 /* Main.storyboard */,
-				5325702B25AC85390043F88F /* LaunchScreen.storyboard */,
+				53C1178825B1D7A90018B9E2 /* Models */,
+				530AE24225C07A4400E03FD2 /* View */,
+				530AE24425C07A6000E03FD2 /* Controller */,
 				53D1E30625A88C050011F321 /* Assets.xcassets */,
 				53D1E30B25A88C050011F321 /* Info.plist */,
 				53D1E30325A88C020011F321 /* ProjetIOS.xcdatamodeld */,
@@ -178,8 +205,9 @@
 				53D1E2FB25A88C020011F321 /* AppDelegate.swift in Sources */,
 				53C1179025B1E6F60018B9E2 /* BouteillesTableViewCell.swift in Sources */,
 				53C1178D25B1E5CA0018B9E2 /* GestionViewController.swift in Sources */,
-				53C1179B25B1FDEF0018B9E2 /* AjoutViewController.swift in Sources */,
 				53D1E2FD25A88C020011F321 /* SceneDelegate.swift in Sources */,
+				530AE24D25C07E6D00E03FD2 /* BouteillesAjout.swift in Sources */,
+				53AB7FCE25C30441003BBEFA /* InfosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
